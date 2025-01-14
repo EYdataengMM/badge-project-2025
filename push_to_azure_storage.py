@@ -12,6 +12,11 @@ from azure.keyvault.secrets import SecretClient
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 import os
 
+# if using environmental variables
+#from dotenv import load_dotenv
+#load_dotenv()
+#key_vault_name = os.getenv('KEY_VAULT_NAME')
+
 key_vault_name = "badgeprojectkv"
 secret_name = "badgeprojectsa-constring"
 storage_account_name = "badgeprojectsa"
